@@ -46,7 +46,7 @@ export default function Home() {
       </div>
       <div className="flex flex-col gap-2 p-2 bg-gradient-to-br from-[#d5d4d4] to-[#4ba996]/50 rounded-lg">
         <h2 className="text-lg md:text-xl font-semibold text-[#1c1c1c]">
-          Hi, I'm Luke Sauls
+          Hi, I&apos;m Luke Sauls
         </h2>
         <div className="flex flex-col gap-4">
           <p className="md:text-lg">
