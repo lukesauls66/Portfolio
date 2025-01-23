@@ -140,8 +140,10 @@ export default function Home() {
               rel="noopener noreferrer"
               className="flex gap-2"
             >
-              <p className="md:text-lg">-</p>
-              <p className="md:text-lg hover:underline hover:underline-offset-2 hover:cursor-pointer">
+              <p className="md:text-lg lg:text-xl xl:text-2xl lg:font-semibold">
+                -
+              </p>
+              <p className="md:text-lg lg:text-xl xl:text-2xl lg:font-semibold hover:underline hover:underline-offset-2 hover:cursor-pointer">
                 Lovely Paws Hotel
               </p>
             </a>
@@ -151,8 +153,10 @@ export default function Home() {
               rel="noopener noreferrer"
               className="flex gap-2"
             >
-              <p className="md:text-lg">-</p>
-              <p className="md:text-lg hover:underline hover:underline-offset-2 hover:cursor-pointer">
+              <p className="md:text-lg lg:text-xl xl:text-2xl lg:font-semibold">
+                -
+              </p>
+              <p className="md:text-lg lg:text-xl xl:text-2xl lg:font-semibold hover:underline hover:underline-offset-2 hover:cursor-pointer">
                 VacayDnD
               </p>
             </a>
@@ -162,8 +166,10 @@ export default function Home() {
               rel="noopener noreferrer"
               className="flex gap-2"
             >
-              <p className="md:text-lg">-</p>
-              <p className="md:text-lg hover:underline hover:underline-offset-2 hover:cursor-pointer">
+              <p className="md:text-lg lg:text-xl xl:text-2xl lg:font-semibold">
+                -
+              </p>
+              <p className="md:text-lg lg:text-xl xl:text-2xl lg:font-semibold hover:underline hover:underline-offset-2 hover:cursor-pointer">
                 PlatChasers
               </p>
             </a>
