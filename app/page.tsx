@@ -38,9 +38,22 @@ export default function Home() {
           </div>
           <div className="flex gap-4">
             <p className="text-white text-lg font-semibold">Email:</p>
-            <p className="text-blue-400 hover:underline hover:underline-offset-2 hover:cursor-pointer text-lg">
+            <a
+              href="mailto:luke.sauls279@gmail.com"
+              className="text-blue-400 hover:underline hover:underline-offset-2 hover:cursor-pointer text-lg"
+            >
               luke.sauls279@gmail.com
-            </p>
+            </a>
+          </div>
+          <div className="flex gap-4">
+            <p className="text-white text-lg font-semibold">Resume:</p>
+            <a
+              target="_blank"
+              href="https://docs.google.com/document/d/16t0JD-jb9FxAY9ODG4-Kd_g8wY9UnjMMCQP9Q34u_pU/edit?usp=sharing"
+              className="text-blue-400 hover:underline hover:underline-offset-2 hover:cursor-pointer text-lg"
+            >
+              Luke Sauls&apos; Resume
+            </a>
           </div>
         </div>
       </div>
