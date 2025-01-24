@@ -66,9 +66,9 @@ export default function Home() {
             I&apos;m a detail-oriented and adaptable software engineer with
             experience in full-stack web development. My expertise lies in
             building modern, scalable web applications using JavaScript,
-            TypeScript, Python, and frameworks like React. I also have
-            experience working with cloud technologies such as AWS S3 to enhance
-            performance and reliability.
+            TypeScript, Python and frameworks like React and Next.js. I also
+            have experience working with cloud technologies such as AWS S3 to
+            enhance performance and reliability.
           </p>
           <p className="md:text-lg">
             I thrive on solving complex problems, collaborating with
