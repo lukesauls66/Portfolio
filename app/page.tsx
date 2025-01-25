@@ -3,7 +3,7 @@ import { Separator } from "@/components/ui/separator";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-4 md:gap-6 lg:gap-8 bg-gray-700/90 w-full h-full pb-4 px-3 lg:px-6 lg:pb-6 lg:pt-4">
+    <div className="flex flex-col gap-4 md:gap-6 lg:gap-8 bg-[#515961] w-full h-full pb-4 px-3 lg:px-6 lg:pb-6 lg:pt-4">
       <div className="flex items-center justify-between p-[1rem] w-full">
         <img
           src="images/profile-pic.jpg"
@@ -144,66 +144,80 @@ export default function Home() {
           Projects
         </h2>
       </div>
-      <div className="flex justify-between w-full gap-6">
-        <div className="flex flex-col gap-5 p-2 bg-gradient-to-br from-[#d5d4d4] to-[#4ba996]/50 rounded-lg w-full max-w-[80rem]">
-          <div className="flex flex-col justify-between md:items-center py-4 md:py-[3rem] lg:py-[4.5rem] xl:pt-[4.5rem] xl:pb-[9rem] h-full">
-            <a
-              href="https://lovely-paws-hotel-53al.onrender.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex gap-2"
-            >
-              <p className="md:text-lg lg:text-xl xl:text-2xl lg:font-semibold">
-                -
-              </p>
-              <p className="md:text-lg lg:text-xl xl:text-2xl lg:font-semibold hover:underline hover:underline-offset-2 hover:cursor-pointer">
-                Lovely Paws Hotel
-              </p>
-            </a>
-            <a
-              href="https://vacaydnd-1jt8.onrender.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex gap-2"
-            >
-              <p className="md:text-lg lg:text-xl xl:text-2xl lg:font-semibold">
-                -
-              </p>
-              <p className="md:text-lg lg:text-xl xl:text-2xl lg:font-semibold hover:underline hover:underline-offset-2 hover:cursor-pointer">
-                VacayDnD
-              </p>
-            </a>
-            <a
-              href="https://plat-chasers-luke-sauls-projects.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex gap-2"
-            >
-              <p className="md:text-lg lg:text-xl xl:text-2xl lg:font-semibold">
-                -
-              </p>
-              <p className="md:text-lg lg:text-xl xl:text-2xl lg:font-semibold hover:underline hover:underline-offset-2 hover:cursor-pointer">
-                PlatChasers
-              </p>
-            </a>
+      <div className="flex w-full">
+        <div className="flex flex-col items-center smd:grid grid-cols-3 gap-4 w-full">
+          <div className="flex flex-col items-center gap-4 w-full">
+            <div className="relative w-full h-[20rem] md:h-[12rem] lg:h-[22rem]">
+              <img
+                src="images/vacaydnd-pic-2.PNG"
+                alt="VacayDnD Project Pic"
+                className="w-full h-full rounded-lg object-cover"
+              />
+            </div>
+            <div className="bg-gradient-to-br from-[#d5d4d4] to-[#4ba996]/50 rounded-lg w-full">
+              <a
+                href="https://vacaydnd-1jt8.onrender.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2"
+              >
+                <p className="md:text-lg lg:text-xl xl:text-2xl lg:font-semibold">
+                  -
+                </p>
+                <p className="md:text-lg lg:text-xl xl:text-2xl lg:font-semibold hover:underline hover:underline-offset-2 hover:cursor-pointer">
+                  VacayDnD
+                </p>
+              </a>
+            </div>
           </div>
-        </div>
-        <div className="flex flex-col gap-3">
-          <img
-            src="images/hotel-pic.PNG"
-            alt="Lovely Paws Hotel Project Pic"
-            className="w-full md:w-auto max-w-[25rem] lg:max-w-[35rem] xl:max-w-[55rem]  rounded-lg object-contain"
-          />
-          <img
-            src="images/vacaydnd-pic.PNG"
-            alt="VacayDnD Project Pic"
-            className="w-full md:w-auto max-w-[25rem] lg:max-w-[35rem] xl:max-w-[55rem]  rounded-lg object-contain"
-          />
-          <img
-            src="images/platchasers-pic.PNG"
-            alt="PlatChasers Project Pic"
-            className="w-full md:w-auto max-w-[25rem] lg:max-w-[35rem] xl:max-w-[55rem]  rounded-lg object-contain"
-          />
+          <div className="flex flex-col gap-4 w-full">
+            <div className="relative w-full h-[20rem] md:h-[12rem] lg:h-[22rem]">
+              <img
+                src="images/hotel-pic-2.PNG"
+                alt="Lovely Paws Hotel Project Pic"
+                className="w-full h-full rounded-lg object-cover"
+              />
+            </div>
+            <div className="bg-gradient-to-br from-[#d5d4d4] to-[#4ba996]/50 rounded-lg w-full">
+              <a
+                href="https://lovely-paws-hotel-53al.onrender.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2"
+              >
+                <p className="md:text-lg lg:text-xl xl:text-2xl lg:font-semibold">
+                  -
+                </p>
+                <p className="md:text-lg lg:text-xl xl:text-2xl lg:font-semibold hover:underline hover:underline-offset-2 hover:cursor-pointer">
+                  Lovely Paws Hotel
+                </p>
+              </a>
+            </div>
+          </div>
+          <div className="flex flex-col gap-4 w-full">
+            <div className="relative w-full h-[20rem] md:h-[12rem] lg:h-[22rem]">
+              <img
+                src="images/platchasers-pic-2.PNG"
+                alt="PlatChasers Project Pic"
+                className="w-full h-full rounded-lg object-cover"
+              />
+            </div>
+            <div className="bg-gradient-to-br from-[#d5d4d4] to-[#4ba996]/50 rounded-lg w-full">
+              <a
+                href="https://plat-chasers-luke-sauls-projects.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2"
+              >
+                <p className="md:text-lg lg:text-xl xl:text-2xl lg:font-semibold">
+                  -
+                </p>
+                <p className="md:text-lg lg:text-xl xl:text-2xl lg:font-semibold hover:underline hover:underline-offset-2 hover:cursor-pointer">
+                  PlatChasers
+                </p>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
