@@ -84,10 +84,10 @@ export default function Home() {
           headfirst into coding and commit fully to the journey. I fell in love
           with programming during my first project: a frontend-only weather
           application. While learning HTML and CSS, I decided to go beyond the
-          curriculum and explore how to integrate JavaScript to make the
-          application interactive. This experience solidified my belief that I
-          could master any new technology by building, making mistakes, and
-          learning through the process.
+          curriculum at that given time and explore how to integrate JavaScript
+          to make the application interactive. This experience solidified my
+          belief that I could master any new technology by building, making
+          mistakes, and learning through the process.
         </p>
         <p className="text-gray-200 leading-relaxed">
           Recently, I&apos;ve been developing a Currency Converter application
