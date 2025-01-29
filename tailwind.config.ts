@@ -57,6 +57,7 @@ export default {
         smd: "540px",
         md: "768px",
         lg: "1024px",
+        lg2: "1200px",
         xl: "1440px",
       },
       borderRadius: {
