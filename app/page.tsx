@@ -173,7 +173,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 lg2:grid-cols-2 gap-4">
             <div className="bg-gray-700 p-4 rounded-lg shadow-md">
-              <h4 className="text-lg font-semibold text-green-400">
+              <h4 className="text-lg font-semibold text-green-500/80">
                 ⚡ Fast Learning
               </h4>
               <p className="text-gray-300 text-sm">
@@ -183,7 +183,7 @@ export default function Home() {
             </div>
 
             <div className="bg-gray-700 p-4 rounded-lg shadow-md">
-              <h4 className="text-lg font-semibold text-green-400">
+              <h4 className="text-lg font-semibold text-green-500/80">
                 🔧 Problem-Solving
               </h4>
               <p className="text-gray-300 text-sm">
@@ -193,7 +193,7 @@ export default function Home() {
             </div>
 
             <div className="bg-gray-700 p-4 rounded-lg shadow-md">
-              <h4 className="text-lg font-semibold text-green-400">
+              <h4 className="text-lg font-semibold text-green-500/80">
                 🤝 Collaboration
               </h4>
               <p className="text-gray-300 text-sm">
@@ -203,7 +203,7 @@ export default function Home() {
             </div>
 
             <div className="bg-gray-700 p-4 rounded-lg shadow-md">
-              <h4 className="text-lg font-semibold text-green-400">
+              <h4 className="text-lg font-semibold text-green-500/80">
                 🎯 User-Focused
               </h4>
               <p className="text-gray-300 text-sm">
@@ -236,7 +236,7 @@ export default function Home() {
               </h3>
               <div className="mt-4 flex items-center justify-center relative">
                 <button
-                  className="text-gray-300 hover:text-white"
+                  className="text-gray-300 hover:text-green-500/60"
                   onClick={() => handleScroll(categoryIndex, "left")}
                 >
                   <ChevronLeft size={24} />
@@ -303,7 +303,7 @@ export default function Home() {
                   </div>
                 </div>
                 <button
-                  className="text-gray-300 hover:text-white"
+                  className="text-gray-300 hover:text-green-500/60"
                   onClick={() => handleScroll(categoryIndex, "right")}
                 >
                   <ChevronRight size={24} />
@@ -357,7 +357,7 @@ export default function Home() {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-gray-700 p-4 rounded-lg text-center text-lg text-gray-100 font-semibold hover:bg-gray-600 hover:scale-105 transition duration-200"
+                  className="bg-gray-700 p-4 rounded-lg text-center text-lg text-gray-100 font-semibold hover:bg-green-500/60 hover:scale-105 transition duration-200"
                 >
                   {project.title}
                 </a>
