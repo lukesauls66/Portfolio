@@ -216,7 +216,7 @@ export default function Home() {
           <p className="text-gray-300 leading-relaxed mt-4">
             I believe that <strong>technology is more than just code</strong>
             —it&apos;s about building solutions that make life easier, more
-            efficient, and more enjoyable. Let's create something amazing
+            efficient, and more enjoyable. Let&apos;s create something amazing
             together.
           </p>
         </motion.div>
