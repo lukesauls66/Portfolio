@@ -102,7 +102,7 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col md:flex-row gap-6 p-6">
-        <div className="flex flex-col gap-4 p-6 bg-gradient-to-br from-gray-700 to-green-500/30 rounded-lg w-full">
+        <div className="flex flex-col gap-4 p-6 bg-gradient-to-br from-gray-700 to-green-500/30 rounded-lg w-full h-[25rem] md:h-full overflow-y-auto">
           <h2 className="text-xl md:text-2xl font-semibold text-gray-100">
             Hi, I&apos;m Luke Sauls
           </h2>
@@ -153,7 +153,7 @@ export default function Home() {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
-          className="p-6 bg-gray-800 rounded-lg shadow-lg md:w-1/2 flex flex-col gap-4 w-full"
+          className="bg-gray-800 rounded-lg shadow-lg md:w-1/2 flex flex-col gap-4 w-full"
         >
           <h3 className="text-xl md:text-2xl font-semibold text-gray-100">
             What I Bring to the Table
