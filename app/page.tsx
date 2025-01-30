@@ -2,9 +2,9 @@
 
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { Separator } from "@/components/ui/separator";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 
 const techData = [
   {
@@ -30,6 +30,8 @@ export default function Home() {
     techData.map(() => 0)
   );
   const [direction, setDirection] = useState<"left" | "right">("right");
+  const ref = useRef(null);
+  const isInView = useInView(ref, { margin: "-50px" });
 
   const handleScroll = (categoryIndex: number, dir: "left" | "right") => {
     setDirection(dir);
@@ -150,9 +152,11 @@ export default function Home() {
           </p>
         </div>
         <motion.div
+          ref={ref}
           initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
+          whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
+          viewport={{ once: false, amount: 0.2 }}
           className="bg-gray-800 rounded-lg shadow-lg md:w-1/2 flex flex-col gap-4 w-full"
         >
           <h3 className="text-xl md:text-2xl font-semibold text-gray-100">
@@ -340,9 +344,12 @@ export default function Home() {
           ].map((project, index) => (
             <div key={project.title} className="flex flex-col gap-4">
               <motion.div
+                ref={ref}
                 key={project.title}
                 initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: 1, y: 0 }}
+                animate={
+                  isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }
+                }
                 transition={{ duration: 0.8, delay: index * 0.2 }}
                 className="flex flex-col gap-4"
               >
