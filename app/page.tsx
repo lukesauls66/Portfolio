@@ -93,7 +93,7 @@ export default function Home() {
               <span className="font-medium">Resume:</span>{" "}
               <a
                 target="_blank"
-                href="https://docs.google.com/document/d/16t0JD-jb9FxAY9ODG4-Kd_g8wY9UnjMMCQP9Q34u_pU/edit?usp=sharing"
+                href="https://drive.google.com/file/d/1lTSD75cGUkndxIlhST_O3eqPTnh_MK2V/view?usp=sharing"
                 className="text-blue-400 hover:underline"
               >
                 Luke Sauls&apos; Resume
