@@ -25,6 +25,29 @@ const techData = [
   },
 ];
 
+const projects = [
+  {
+    title: "VacayDnD",
+    imgSrc: "images/vacaydnd-pic-2.PNG",
+    link: "https://vacaydnd-1jt8.onrender.com",
+  },
+  {
+    title: "Lovely Paws Hotel",
+    imgSrc: "images/hotel-pic-2.PNG",
+    link: "https://lovely-paws-hotel-53al.onrender.com",
+  },
+  {
+    title: "PlatChasers",
+    imgSrc: "images/platchasers-pic-2.PNG",
+    link: "https://plat-chasers-luke-sauls-projects.vercel.app/",
+  },
+  {
+    title: "AZ Warrior",
+    imgSrc: "images/az-warrior-pic.PNG",
+    link: "https://azwarriorre.com",
+  },
+];
+
 export default function Home() {
   const [activeIndices, setActiveIndices] = useState<number[]>(
     techData.map(() => 0)
@@ -324,24 +347,12 @@ export default function Home() {
         <h2 className="text-lg md:text-xl font-semibold text-gray-100 text-center">
           Projects
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
-          {[
-            {
-              title: "VacayDnD",
-              imgSrc: "images/vacaydnd-pic-2.PNG",
-              link: "https://vacaydnd-1jt8.onrender.com",
-            },
-            {
-              title: "Lovely Paws Hotel",
-              imgSrc: "images/hotel-pic-2.PNG",
-              link: "https://lovely-paws-hotel-53al.onrender.com",
-            },
-            {
-              title: "PlatChasers",
-              imgSrc: "images/platchasers-pic-2.PNG",
-              link: "https://plat-chasers-luke-sauls-projects.vercel.app/",
-            },
-          ].map((project, index) => (
+        <div
+          className={`grid grid-cols-1 ${
+            projects.length < 6 ? "md:grid-cols-2" : "md:grid-cols-3"
+          } gap-6 mt-4`}
+        >
+          {projects.map((project, index) => (
             <div key={project.title} className="flex flex-col gap-4">
               <motion.div
                 ref={ref}
