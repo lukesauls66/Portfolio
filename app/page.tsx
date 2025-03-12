@@ -23,6 +23,10 @@ const techData = [
     title: "Frontend",
     items: ["React", "Redux Toolkit", "Tailwind CSS", "HTML/CSS"],
   },
+  {
+    title: "Other",
+    items: ["Sanity CMS", "Auth.js", "Next.js", "Git"],
+  },
 ];
 
 const projects = [
@@ -255,7 +259,7 @@ export default function Home() {
         <h2 className="text-lg md:text-xl font-semibold text-gray-100">
           Technologies
         </h2>
-        <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
+        <div className="grid grid-cols-2 gap-6 md:grid-cols-5">
           {techData.map((tech, categoryIndex) => (
             <div key={tech.title} className="bg-gray-700 p-4 rounded-lg">
               <h3 className="text-gray-100 font-semibold text-lg">
@@ -319,6 +323,17 @@ export default function Home() {
                           : tech.items[activeIndices[categoryIndex]] ===
                             "Tailwind CSS"
                           ? "images/tailwind.png"
+                          : tech.items[activeIndices[categoryIndex]] ===
+                            "Sanity CMS"
+                          ? "images/sanity.jpg"
+                          : tech.items[activeIndices[categoryIndex]] === "Git"
+                          ? "images/git.png"
+                          : tech.items[activeIndices[categoryIndex]] ===
+                            "Next.js"
+                          ? "images/Nextjs.png"
+                          : tech.items[activeIndices[categoryIndex]] ===
+                            "Auth.js"
+                          ? "images/Auth.jpg"
                           : "images/html-css.jpg"
                       }
                       alt="tech picture"
