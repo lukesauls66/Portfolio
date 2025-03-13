@@ -256,7 +256,7 @@ export default function Home() {
       <Separator className="bg-gray-600 w-full" />
 
       <div className="flex flex-col gap-6">
-        <h2 className="text-lg md:text-xl font-semibold text-gray-100">
+        <h2 className="text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold text-gray-100">
           Technologies
         </h2>
         <div className="grid grid-cols-2 gap-6 md:grid-cols-5">
@@ -359,7 +359,7 @@ export default function Home() {
       <Separator className="bg-gray-600 w-full" />
 
       <div>
-        <h2 className="text-lg md:text-xl font-semibold text-gray-100 text-center">
+        <h2 className="text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold text-gray-100 text-center">
           Projects
         </h2>
         <div
@@ -368,7 +368,7 @@ export default function Home() {
           } gap-6 mt-4`}
         >
           {projects.map((project, index) => (
-            <div key={project.title} className="flex flex-col gap-4">
+            <div key={project.title}>
               <motion.div
                 ref={ref}
                 key={project.title}
