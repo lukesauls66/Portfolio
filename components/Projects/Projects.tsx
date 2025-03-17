@@ -28,6 +28,9 @@ const projects = [
 
 const Projects = () => {
   const refs = useRef(projects.map(() => createRef<HTMLDivElement>()));
+  const inViewStates = refs.current.map((ref) =>
+    useInView(ref, { margin: "-10px" })
+  );
 
   return (
     <div>
@@ -40,7 +43,7 @@ const Projects = () => {
         } gap-6 mt-4`}
       >
         {projects.map((project, index) => {
-          const isInView = useInView(refs.current[index], { margin: "-10px" });
+          const isInView = inViewStates[index];
           return (
             <div key={project.title}>
               <motion.div
