@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useInView } from "framer-motion";
-import { useRef, createRef } from "react";
+import { useRef } from "react";
 
 const projects = [
   {
@@ -27,10 +27,18 @@ const projects = [
 ];
 
 const Projects = () => {
-  const refs = useRef(projects.map(() => createRef<HTMLDivElement>()));
-  const inViewStates = refs.current.map((ref) =>
-    useInView(ref, { margin: "-10px" })
-  );
+  const ref1 = useRef<HTMLDivElement | null>(null);
+  const ref2 = useRef<HTMLDivElement | null>(null);
+  const ref3 = useRef<HTMLDivElement | null>(null);
+  const ref4 = useRef<HTMLDivElement | null>(null);
+
+  const inView1 = useInView(ref1, { margin: "-10px" });
+  const inView2 = useInView(ref2, { margin: "-10px" });
+  const inView3 = useInView(ref3, { margin: "-10px" });
+  const inView4 = useInView(ref4, { margin: "-10px" });
+
+  const refs = [ref1, ref2, ref3, ref4];
+  const inViewStates = [inView1, inView2, inView3, inView4];
 
   return (
     <div>
@@ -47,7 +55,7 @@ const Projects = () => {
           return (
             <div key={project.title}>
               <motion.div
-                ref={refs.current[index]}
+                ref={refs[index]}
                 key={project.title}
                 initial={{ opacity: 0, y: 50 }}
                 animate={
