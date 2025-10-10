@@ -2,6 +2,11 @@ import ProjectTemplate from "../ui/projectTemplate";
 
 const projects = [
   {
+    title: "TheTailgateWarriors",
+    imgSrc: "images/tailgatewarriors.PNG",
+    link: "https://www.thetailgatewarriors.com/",
+  },
+  {
     title: "AZ Warrior",
     imgSrc: "images/az-warrior-pic.PNG",
     link: "https://azwarriorre.com",
@@ -10,16 +15,6 @@ const projects = [
     title: "PlatChasers",
     imgSrc: "images/platchasers-pic-2.PNG",
     link: "https://plat-chasers-luke-sauls-projects.vercel.app/",
-  },
-  {
-    title: "Lovely Paws Hotel",
-    imgSrc: "images/hotel-pic-2.PNG",
-    link: "https://lovely-paws-hotel-53al.onrender.com",
-  },
-  {
-    title: "VacayDnD",
-    imgSrc: "images/vacaydnd-pic-2.PNG",
-    link: "https://vacaydnd-1jt8.onrender.com",
   },
 ];
 

@@ -7,7 +7,7 @@ import { useState } from "react";
 const techData = [
   {
     title: "Languages",
-    items: ["JavaScript", "TypeScript", "Python"],
+    items: ["JavaScript", "TypeScript", "Python", "Java"],
   },
   {
     title: "Databases",
@@ -85,6 +85,8 @@ const Tech = () => {
                         ? "images/TS.png"
                         : tech.items[activeIndices[categoryIndex]] === "Python"
                         ? "images/PY.png"
+                        : tech.items[activeIndices[categoryIndex]] === "Java"
+                        ? "images/java.png"
                         : tech.items[activeIndices[categoryIndex]] === "SQLite3"
                         ? "images/SQLite.jpg"
                         : tech.items[activeIndices[categoryIndex]] ===
