@@ -13,67 +13,97 @@ const Perks = () => {
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 1.2, ease: "easeOut" }}
       viewport={{ once: false, amount: 0.2 }}
-      className="bg-gray-800 rounded-lg shadow-lg md:w-1/2 flex flex-col gap-4 w-full p-2"
+      className="space-y-6 w-full"
     >
-      <h3 className="text-xl md:text-2xl font-semibold text-gray-100">
-        What I Bring to the Table
-      </h3>
+      {/* Header Section */}
+      <div className="bg-gradient-to-br from-gray-800/50 to-purple-900/30 backdrop-blur-sm border border-gray-700/50 rounded-xl p-6">
+        <div className="flex items-center gap-4 mb-4">
+          <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-2xl">
+            ✨
+          </div>
+          <div>
+            <h3 className="text-2xl md:text-3xl font-bold text-gray-100">
+              What I Bring
+            </h3>
+            <p className="text-purple-400 font-medium">
+              Core Strengths & Values
+            </p>
+          </div>
+        </div>
+        <p className="text-gray-300 leading-relaxed">
+          My journey has shaped me into a developer who values problem-solving,
+          adaptability, and collaboration. I thrive on crafting solutions that
+          enhance user experiences.
+        </p>
+      </div>
 
-      <p className="text-gray-300 leading-relaxed">
-        My journey into software engineering has shaped me into a developer who
-        values <strong>problem-solving, adaptability, and collaboration</strong>
-        . I&apos;m not just focused on writing code — I thrive on crafting
-        solutions that{" "}
-        <strong>enhance user experiences and drive meaningful impact</strong>.
-      </p>
-
-      <div className="grid grid-cols-1 lg2:grid-cols-2 gap-4">
-        <div className="bg-gray-700 p-4 rounded-lg shadow-md">
-          <h4 className="text-lg font-semibold text-green-500/80">
-            ⚡ Fast Learning
-          </h4>
-          <p className="text-gray-300 text-sm">
-            I embrace new technologies and frameworks quickly by diving in,
-            experimenting, and learning through hands-on projects.
+      {/* Core Strengths */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="bg-gray-800/40 backdrop-blur-sm border border-gray-700/40 rounded-lg p-5">
+          <div className="flex items-center gap-3 mb-3">
+            <span className="text-2xl">⚡</span>
+            <h4 className="text-lg font-semibold text-gray-100">
+              Fast Learning
+            </h4>
+          </div>
+          <p className="text-gray-300 text-sm leading-relaxed">
+            Embrace new technologies quickly through hands-on experimentation
+            and practical application.
           </p>
         </div>
 
-        <div className="bg-gray-700 p-4 rounded-lg shadow-md">
-          <h4 className="text-lg font-semibold text-green-500/80">
-            🔧 Problem-Solving
-          </h4>
-          <p className="text-gray-300 text-sm">
-            I enjoy breaking down complex problems into manageable solutions,
-            focusing on efficiency and scalability.
+        <div className="bg-gray-800/40 backdrop-blur-sm border border-gray-700/40 rounded-lg p-5">
+          <div className="flex items-center gap-3 mb-3">
+            <span className="text-2xl">🔧</span>
+            <h4 className="text-lg font-semibold text-gray-100">
+              Problem-Solving
+            </h4>
+          </div>
+          <p className="text-gray-300 text-sm leading-relaxed">
+            Break down complex challenges into manageable, scalable solutions
+            with efficiency in mind.
           </p>
         </div>
 
-        <div className="bg-gray-700 p-4 rounded-lg shadow-md">
-          <h4 className="text-lg font-semibold text-green-500/80">
-            🤝 Collaboration
-          </h4>
-          <p className="text-gray-300 text-sm">
-            I thrive in team environments, valuing communication, feedback, and
-            shared growth.
+        <div className="bg-gray-800/40 backdrop-blur-sm border border-gray-700/40 rounded-lg p-5">
+          <div className="flex items-center gap-3 mb-3">
+            <span className="text-2xl">🤝</span>
+            <h4 className="text-lg font-semibold text-gray-100">
+              Collaboration
+            </h4>
+          </div>
+          <p className="text-gray-300 text-sm leading-relaxed">
+            Thrive in team environments through clear communication, feedback,
+            and shared growth.
           </p>
         </div>
 
-        <div className="bg-gray-700 p-4 rounded-lg shadow-md">
-          <h4 className="text-lg font-semibold text-green-500/80">
-            🎯 User-Focused
-          </h4>
-          <p className="text-gray-300 text-sm">
-            I prioritize creating intuitive, engaging, and accessible user
-            experiences that make a real difference.
+        <div className="bg-gray-800/40 backdrop-blur-sm border border-gray-700/40 rounded-lg p-5">
+          <div className="flex items-center gap-3 mb-3">
+            <span className="text-2xl">🎯</span>
+            <h4 className="text-lg font-semibold text-gray-100">
+              User-Focused
+            </h4>
+          </div>
+          <p className="text-gray-300 text-sm leading-relaxed">
+            Prioritize intuitive, accessible experiences that make a real
+            difference for users.
           </p>
         </div>
       </div>
 
-      <p className="text-gray-300 leading-relaxed mt-4">
-        I believe that <strong>technology is more than just code</strong>
-        —it&apos;s about building solutions that make life easier, and more
-        enjoyable. Let&apos;s create something amazing together.
-      </p>
+      {/* Philosophy */}
+      <div className="bg-gradient-to-r from-pink-900/20 to-purple-900/20 backdrop-blur-sm border border-gray-700/40 rounded-xl p-6">
+        <div className="flex items-center gap-3 mb-4">
+          <span className="text-2xl">💭</span>
+          <h4 className="text-xl font-bold text-gray-100">My Philosophy</h4>
+        </div>
+        <p className="text-gray-300 leading-relaxed">
+          Technology is more than just code—it's about building solutions that
+          make life easier and more enjoyable. Let's create something amazing
+          together.
+        </p>
+      </div>
     </motion.div>
   );
 };

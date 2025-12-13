@@ -68,7 +68,10 @@ const Projects = () => {
   const otherProjects = projects.filter((project) => !project.featured);
 
   return (
-    <section className="py-8 md:py-16 px-4 w-full max-w-7xl mx-auto overflow-hidden">
+    <section
+      id="projects"
+      className="py-8 md:py-16 px-4 w-full max-w-7xl mx-auto overflow-hidden"
+    >
       {/* Header Section */}
       <div className="text-center mb-16">
         <motion.h2
