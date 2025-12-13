@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 
 const Header = () => {
   return (
-    <header className="py-8 px-4 max-w-7xl mx-auto">
+    <header className="flex flex-col items-center py-8 px-4 w-full">
       <div className="bg-gradient-to-br from-gray-800/50 to-blue-900/30 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-6 md:p-8">
         <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
           {/* Profile Image */}
@@ -64,7 +64,7 @@ const Header = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="flex flex-col sm:flex-row gap-4 items-center justify-center md:justify-start"
+              className="flex flex-col md:flex-row gap-4 items-center justify-center md:justify-start"
             >
               <div className="flex gap-3">
                 <a
