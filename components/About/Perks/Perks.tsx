@@ -99,9 +99,9 @@ const Perks = () => {
           <h4 className="text-xl font-bold text-gray-100">My Philosophy</h4>
         </div>
         <p className="text-gray-300 leading-relaxed">
-          Technology is more than just code—it's about building solutions that
-          make life easier and more enjoyable. Let's create something amazing
-          together.
+          Technology is more than just code—it&apos;s about building solutions
+          that make life easier and more enjoyable. Let&apos;s create something
+          amazing together.
         </p>
       </div>
     </motion.div>

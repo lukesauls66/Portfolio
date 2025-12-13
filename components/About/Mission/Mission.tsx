@@ -11,7 +11,7 @@ const Mission = () => {
           </div>
           <div>
             <h2 className="text-2xl md:text-3xl font-bold text-gray-100">
-              Hi, I'm Luke Sauls
+              Hi, I&apos;m Luke Sauls
             </h2>
             <p className="text-blue-400 font-medium">
               Full-Stack Software Engineer
