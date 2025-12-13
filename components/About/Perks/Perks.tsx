@@ -13,7 +13,7 @@ const Perks = () => {
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 1.2, ease: "easeOut" }}
       viewport={{ once: false, amount: 0.2 }}
-      className="bg-gray-800 rounded-lg shadow-lg md:w-1/2 flex flex-col gap-4 w-full"
+      className="bg-gray-800 rounded-lg shadow-lg md:w-1/2 flex flex-col gap-4 w-full p-2"
     >
       <h3 className="text-xl md:text-2xl font-semibold text-gray-100">
         What I Bring to the Table
@@ -71,9 +71,8 @@ const Perks = () => {
 
       <p className="text-gray-300 leading-relaxed mt-4">
         I believe that <strong>technology is more than just code</strong>
-        —it&apos;s about building solutions that make life easier, more
-        efficient, and more enjoyable. Let&apos;s create something amazing
-        together.
+        —it&apos;s about building solutions that make life easier, and more
+        enjoyable. Let&apos;s create something amazing together.
       </p>
     </motion.div>
   );

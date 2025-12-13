@@ -29,7 +29,7 @@ const ProjectTemplate: React.FC<projectProps> = ({ project }) => {
         alt={`${project.title} Project Pic`}
         whileHover={{ scale: 1.05 }}
         transition={{ duration: 0.3 }}
-        className="w-full h-48 md:h-56 lg2:h-[18rem] rounded-lg object-cover shadow-md"
+        className="w-full h-48 md:h-56 lg:h-[22rem] xl:h-[32rem] rounded-lg object-cover shadow-md"
       />
       <a
         href={project.link}
