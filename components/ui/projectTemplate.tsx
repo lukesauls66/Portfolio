@@ -93,7 +93,7 @@ const ProjectTemplate: React.FC<ProjectProps> = ({ project }) => {
             rel="noopener noreferrer"
             className="flex-1 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold py-2 px-4 rounded-lg transition-colors duration-200 text-center"
           >
-            Live Demo
+            {project.featured ? "Live" : "Live Demo"}
           </a>
           <a
             href={project.githubUrl}

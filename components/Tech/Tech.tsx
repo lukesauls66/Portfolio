@@ -65,7 +65,7 @@ const techCategories = [
     icon: "☁️",
     description: "Deployment and cloud infrastructure",
     skills: [
-      { name: "AWS", level: 75, experience: "1+ year", icon: "☁️" },
+      { name: "AWS", level: 75, experience: "2+ year", icon: "☁️" },
       { name: "Vercel", level: 85, experience: "2+ years", icon: "▲" },
       { name: "Firebase", level: 70, experience: "1+ year", icon: "🔥" },
       { name: "Docker", level: 70, experience: "1+ year", icon: "🐳" },
@@ -237,7 +237,7 @@ const Tech = () => {
           <div className="text-sm text-gray-400">Years Experience</div>
         </div>
         <div className="text-center p-4 bg-gray-800/30 rounded-lg border border-gray-700/30">
-          <div className="text-2xl font-bold text-purple-400">10+</div>
+          <div className="text-2xl font-bold text-purple-400">3</div>
           <div className="text-sm text-gray-400">Projects Built</div>
         </div>
         <div className="text-center p-4 bg-gray-800/30 rounded-lg border border-gray-700/30">

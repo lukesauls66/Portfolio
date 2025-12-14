@@ -43,7 +43,7 @@ const Header = () => {
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-100 mb-2">
                 Luke Sauls
               </h1>
-              <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-2 mb-3">
+              <div className="flex flex-col md:flex-row items-center justify-center md:justify-start gap-2 md:gap-4 mb-3">
                 <p className="text-xl md:text-2xl text-blue-400 font-semibold">
                   Full-Stack Software Engineer
                 </p>

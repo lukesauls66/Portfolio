@@ -38,7 +38,7 @@ const Perks = () => {
       </div>
 
       {/* Core Strengths */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="bg-gray-800/40 backdrop-blur-sm border border-gray-700/40 rounded-lg p-5">
           <div className="flex items-center gap-3 mb-3">
             <span className="text-2xl">⚡</span>
