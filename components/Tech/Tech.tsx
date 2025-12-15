@@ -229,20 +229,30 @@ const Tech = () => {
         className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12"
       >
         <div className="text-center p-4 bg-gray-800/30 rounded-lg border border-gray-700/30">
-          <div className="text-2xl font-bold text-blue-400">15+</div>
-          <div className="text-sm text-gray-400">Technologies</div>
+          <div className="text-2xl md:text-3xl font-bold text-blue-400">
+            15+
+          </div>
+          <div className="text-sm md:text-md text-gray-400">Technologies</div>
         </div>
         <div className="text-center p-4 bg-gray-800/30 rounded-lg border border-gray-700/30">
-          <div className="text-2xl font-bold text-green-400">3+</div>
-          <div className="text-sm text-gray-400">Years Experience</div>
+          <div className="text-2xl md:text-3xl font-bold text-green-400">
+            3+
+          </div>
+          <div className="text-sm md:text-md text-gray-400">
+            Years Experience
+          </div>
         </div>
         <div className="text-center p-4 bg-gray-800/30 rounded-lg border border-gray-700/30">
-          <div className="text-2xl font-bold text-purple-400">3</div>
-          <div className="text-sm text-gray-400">Projects Built</div>
+          <div className="text-2xl md:text-3xl font-bold text-purple-400">
+            3
+          </div>
+          <div className="text-sm md:text-md text-gray-400">Projects Built</div>
         </div>
         <div className="text-center p-4 bg-gray-800/30 rounded-lg border border-gray-700/30">
-          <div className="text-2xl font-bold text-yellow-400">5</div>
-          <div className="text-sm text-gray-400">Core Languages</div>
+          <div className="text-2xl md:text-3xl font-bold text-yellow-400">
+            5
+          </div>
+          <div className="text-sm md:text-md text-gray-400">Core Languages</div>
         </div>
       </motion.div>
     </section>
