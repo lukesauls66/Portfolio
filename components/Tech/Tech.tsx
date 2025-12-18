@@ -91,7 +91,7 @@ const SkillBar = ({
   <div className="group">
     <div className="flex items-center justify-between mb-2">
       <div className="flex items-center gap-2">
-        <span className="text-lg">{skill.icon}</span>
+        <span className="text-lg w-8">{skill.icon}</span>
         <span className="text-gray-200 font-medium">{skill.name}</span>
       </div>
       <span className="text-xs text-gray-400">{skill.experience}</span>
