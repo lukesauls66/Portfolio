@@ -61,6 +61,18 @@ const projects = [
     category: "Full-Stack",
     year: "2024",
   },
+  {
+    title: "Game Inventory API",
+    description:
+      "RESTful API for managing game inventories with authentication and custom CRUD operations.",
+    imgSrc: "images/Strapi.PNG",
+    liveUrl: "",
+    githubUrl: "https://github.com/lukesauls66/game-inventory-api",
+    techStack: ["Node.js", "TypeScript", "PostgreSQL", "Strapi", "RESTful API"],
+    featured: false,
+    category: "Backend API",
+    year: "2025",
+  },
 ];
 
 const Projects = () => {

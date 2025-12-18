@@ -72,6 +72,15 @@ const techCategories = [
       { name: "Git", level: 90, experience: "3+ years", icon: "📝" },
     ],
   },
+  {
+    title: "Content Management Systems",
+    icon: "📝",
+    description: "Headless CMS and content management platforms",
+    skills: [
+      { name: "Sanity CMS", level: 80, experience: "2+ years", icon: "📄" },
+      { name: "Strapi", level: 65, experience: "< 1 year", icon: "🚀" },
+    ],
+  },
 ];
 
 const SkillBar = ({
@@ -129,14 +138,14 @@ const Tech = () => {
       </div>
 
       {/* Desktop View */}
-      <div className="hidden lg:grid lg:grid-cols-3 gap-8 mb-8">
+      <div className="hidden lg:grid lg:grid-cols-3 xl:grid-cols-4 gap-8 xl:gap-4 mb-8">
         {techCategories.map((category, index) => (
           <motion.div
             key={category.title}
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: index * 0.1 }}
-            className="bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-xl p-6 hover:border-gray-600/50 transition-all duration-300"
+            className={`bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-xl p-6 hover:border-gray-600/50 transition-all duration-300 `}
           >
             <div className="flex items-center gap-3 mb-4">
               <span className="text-2xl">{category.icon}</span>

@@ -87,19 +87,25 @@ const ProjectTemplate: React.FC<ProjectProps> = ({ project }) => {
 
         {/* Action Buttons */}
         <div className="flex gap-3">
-          <a
-            href={project.liveUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-1 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold py-2 px-4 rounded-lg transition-colors duration-200 text-center"
-          >
-            {project.featured ? "Live" : "Live Demo"}
-          </a>
+          {project.liveUrl && project.liveUrl.trim() !== "" && (
+            <a
+              href={project.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold py-2 px-4 rounded-lg transition-colors duration-200 text-center"
+            >
+              {project.featured ? "Live" : "Live Demo"}
+            </a>
+          )}
           <a
             href={project.githubUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 bg-gray-700 hover:bg-gray-600 text-gray-100 text-sm font-semibold py-2 px-4 rounded-lg transition-colors duration-200 text-center border border-gray-600"
+            className={`${
+              project.liveUrl && project.liveUrl.trim() !== ""
+                ? "flex-1"
+                : "w-full"
+            } bg-gray-700 hover:bg-gray-600 text-gray-100 text-sm font-semibold py-2 px-4 rounded-lg transition-colors duration-200 text-center border border-gray-600`}
           >
             GitHub
           </a>
