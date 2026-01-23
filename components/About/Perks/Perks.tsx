@@ -85,8 +85,8 @@ const Perks = () => {
               <h5 className="font-semibold text-gray-100">Reading</h5>
             </div>
             <p className="text-gray-300 text-sm">
-              From sci-fi novels to tech blogs, I'm always absorbing new ideas
-              and perspectives.
+              From sci-fi novels to tech blogs, I&apos;m always absorbing new
+              ideas and perspectives.
             </p>
           </div>
 
