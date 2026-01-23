@@ -40,9 +40,14 @@ const Header = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="mb-4"
             >
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-100 mb-2">
-                Luke Sauls
-              </h1>
+              <div className="flex justify-between">
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-100 mb-2">
+                  Luke Sauls
+                </h1>
+                <p className="flex items-center text-xl text-white font-semibold px-1">
+                  Computer Science @ MCC
+                </p>
+              </div>
               <div className="flex flex-col md:flex-row items-center justify-center md:justify-start gap-2 md:gap-4 mb-3">
                 <p className="text-xl md:text-2xl text-blue-400 font-semibold">
                   Full-Stack Software Engineer
@@ -97,10 +102,10 @@ const Header = () => {
                     setTimeout(() => {
                       if (document.hasFocus()) {
                         navigator.clipboard.writeText(
-                          "luke.sauls279@gmail.com"
+                          "luke.sauls279@gmail.com",
                         );
                         alert(
-                          "Email client not detected. Email copied to clipboard!"
+                          "Email client not detected. Email copied to clipboard!",
                         );
                       }
                     }, 1000);

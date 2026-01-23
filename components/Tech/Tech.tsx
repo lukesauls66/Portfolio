@@ -6,19 +6,17 @@ import { useState } from "react";
 const techCategories = [
   {
     title: "Programming Languages",
-    icon: "💻",
     description: "Core languages for full-stack development",
     skills: [
-      { name: "JavaScript", level: 90, experience: "3+ years", icon: "🟨" },
-      { name: "TypeScript", level: 85, experience: "3+ years", icon: "🔷" },
-      { name: "Python", level: 80, experience: "2+ years", icon: "🐍" },
-      { name: "Java", level: 70, experience: "1+ year", icon: "☕" },
-      { name: "HTML/CSS", level: 90, experience: "3+ years", icon: "🌐" },
+      { name: "JavaScript", level: 90, experience: "3+ years" },
+      { name: "TypeScript", level: 85, experience: "3+ years" },
+      { name: "Python", level: 80, experience: "2+ years" },
+      { name: "Java", level: 70, experience: "1+ year" },
+      { name: "HTML/CSS", level: 90, experience: "3+ years" },
     ],
   },
   {
     title: "Frontend Technologies",
-    icon: "🎨",
     description: "Modern UI/UX development frameworks",
     skills: [
       { name: "React", level: 90, experience: "3+ years", icon: "⚛️" },
@@ -29,7 +27,6 @@ const techCategories = [
   },
   {
     title: "Backend & APIs",
-    icon: "🛠️",
     description: "Server-side development & ORM tools",
     skills: [
       { name: "Node.js", level: 85, experience: "3+ years", icon: "🟢" },
@@ -42,7 +39,6 @@ const techCategories = [
   },
   {
     title: "Databases",
-    icon: "🗄️",
     description: "Data storage and management systems",
     skills: [
       { name: "PostgreSQL", level: 85, experience: "2+ years", icon: "🐘" },
@@ -52,7 +48,6 @@ const techCategories = [
   },
   {
     title: "Authentication & Security",
-    icon: "🔐",
     description: "Security and authentication systems",
     skills: [
       { name: "Auth.js", level: 80, experience: "2+ years", icon: "🔑" },
@@ -62,7 +57,6 @@ const techCategories = [
   },
   {
     title: "DevOps & Cloud",
-    icon: "☁️",
     description: "Deployment and cloud infrastructure",
     skills: [
       { name: "AWS", level: 75, experience: "2+ year", icon: "☁️" },
@@ -73,8 +67,7 @@ const techCategories = [
     ],
   },
   {
-    title: "Content Management Systems",
-    icon: "📝",
+    title: "Content Management",
     description: "Headless CMS and content management platforms",
     skills: [
       { name: "Sanity CMS", level: 80, experience: "2+ years", icon: "📄" },
@@ -86,12 +79,11 @@ const techCategories = [
 const SkillBar = ({
   skill,
 }: {
-  skill: { name: string; level: number; experience: string; icon: string };
+  skill: { name: string; level: number; experience: string };
 }) => (
   <div className="group">
     <div className="flex items-center justify-between mb-2">
       <div className="flex items-center gap-2">
-        <span className="text-lg w-8">{skill.icon}</span>
         <span className="text-gray-200 font-medium">{skill.name}</span>
       </div>
       <span className="text-xs text-gray-400">{skill.experience}</span>
@@ -148,12 +140,10 @@ const Tech = () => {
             className={`bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-xl p-6 hover:border-gray-600/50 transition-all duration-300 `}
           >
             <div className="flex items-center gap-3 mb-4">
-              <span className="text-2xl">{category.icon}</span>
               <div>
                 <h3 className="text-xl font-bold text-gray-100">
                   {category.title}
                 </h3>
-                <p className="text-sm text-gray-400">{category.description}</p>
               </div>
             </div>
             <div className="space-y-4">
@@ -188,7 +178,7 @@ const Tech = () => {
                   : "bg-gray-700/50 text-gray-300 hover:bg-gray-600/50"
               }`}
             >
-              {category.icon} {category.title}
+              {category.title}
             </button>
           ))}
         </div>
@@ -201,16 +191,10 @@ const Tech = () => {
           className="bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-xl p-6"
         >
           <div className="flex items-center gap-3 mb-6">
-            <span className="text-2xl">
-              {techCategories[selectedCategory].icon}
-            </span>
             <div>
               <h3 className="text-xl font-bold text-gray-100">
                 {techCategories[selectedCategory].title}
               </h3>
-              <p className="text-sm text-gray-400">
-                {techCategories[selectedCategory].description}
-              </p>
             </div>
           </div>
           <div className="space-y-4">
@@ -224,7 +208,7 @@ const Tech = () => {
                 >
                   <SkillBar skill={skill} />
                 </motion.div>
-              )
+              ),
             )}
           </div>
         </motion.div>
@@ -253,7 +237,7 @@ const Tech = () => {
         </div>
         <div className="text-center p-4 bg-gray-800/30 rounded-lg border border-gray-700/30">
           <div className="text-2xl md:text-3xl font-bold text-purple-400">
-            3
+            4
           </div>
           <div className="text-sm md:text-md text-gray-400">Projects Built</div>
         </div>
